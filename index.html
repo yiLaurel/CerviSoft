@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CerviSoft - Almohadas Ergonómicas para la Tercera Edad</title>
+    <meta name="description" content="Almohadas ergonómicas diseñadas especialmente para personas de la tercera edad. Mejora tu descanso y cuida tu salud cervical con nuestros productos.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <a href="https://wa.me/524423356604?text=✨%20¡Hola!%20Gracias%20por%20contactar%20a%20Cervisoft%20✨%0A%0ASomos%20fabricantes%20de%20almohadas%20ergonómicas%20diseñadas%20para%20mejorar%20tu%20descanso%20y%20cuidar%20de%20tu%20salud%20cervical.%20🛏️💆‍♀️%0A%0A📍Nuestros%20productos%20están%20disponibles%20en%20Farmacias%20Guadalajara,%20con%20el%20Doctor%20Simi%20y%20otras%20tiendas%20autorizadas.%0A🌐%20Puedes%20consultar%20el%20mapa%20de%20ubicaciones%20exactas%20en%20nuestra%20página%20web.%0A%0A🕐%20En%20un%20momento,%20alguien%20de%20nuestro%20equipo%20te%20atenderá%20personalmente.%0AMientras%20tanto,%20si%20deseas%20hacer%20un%20pedido%20directo%20o%20conocer%20precios,%20no%20dudes%20en%20escribirnos.%0A%0A⏰%20Horario%20de%20atención:%20Lunes%20a%20viernes%20de%209:00%20a.m.%20a%206:00%20p.m.%0A💙%20Gracias%20por%20confiar%20en%20Cervisoft.%20¡Tu%20descanso%20es%20nuestra%20prioridad!" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="almohadas/logo.jpeg" alt="CerviSoft Logo">
+                <div class="logo-text">
+                    <h1>CerviSoft</h1>
+                    <p>Descanso ergonómico para todas las edades</p>
+                </div>
+            </div>
+            
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#tiendas">Tiendas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Almohadas Ergonómicas CerviSoft</h2>
+            <p>Diseñadas especialmente para el confort de la tercera edad, pero perfectas para todas las edades. Mejora tu calidad de sueño y cuida tu salud cervical.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn">Ver Productos</a>
+                <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="productos" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestras Almohadas</h2>
+                <p>Conoce nuestra línea de almohadas ergonómicas diseñadas para brindar el máximo confort y soporte cervical</p>
+            </div>
+            
+            <div class="productos-grid">
+                
+                <div class="producto" data-product="1">
+                    <div class="producto-img">
+                        <img src="almohadas/almohada1.jpg" alt="Almohada CerviSoft Modelo 1">
+                        <div class="zoom-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="producto-content">
+                        <h3>Modelo Clásico</h3>
+                        <p>Almohada ergonómica básica para soporte cervical óptimo</p>
+                        <span class="precio">$299</span>
+                        <button class="btn btn-small btn-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+                
+             
+                <div class="producto" data-product="2">
+                    <div class="producto-img">
+                        <img src="almohadas/almohada2.jpg" alt="Almohada CerviSoft Modelo 2">
+                        <div class="zoom-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="producto-content">
+                        <h3>Modelo Premium</h3>
+                        <p>Mayor densidad para un soporte cervical avanzado</p>
+                        <span class="precio">$399</span>
+                        <button class="btn btn-small btn-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+                
+               
+                <div class="producto" data-product="3">
+                    <div class="producto-img">
+                        <img src="almohadas/almohada3.png" alt="Almohada CerviSoft Modelo 3">
+                        <div class="zoom-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="producto-content">
+                        <h3>Modelo Deluxe</h3>
+                        <p>Materiales premium para el máximo confort y durabilidad</p>
+                        <span class="precio">$499</span>
+                        <button class="btn btn-small btn-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="testimonios" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Experiencias reales de personas que han mejorado su descanso con nuestras almohadas</p>
+            </div>
+            
+            <div class="testimonios-container">
+                <div class="testimonio">
+                    <p>"Desde que uso la almohada CerviSoft he dejado de despertar con dolor de cuello. La recomiendo especialmente para personas mayores."</p>
+                    <p class="autor">- María G., 68 años</p>
+                </div>
+                
+                <div class="testimonio">
+                    <p>"Increíble cómo ha mejorado mi calidad de sueño. Me costó acostumbrarme los primeros días pero ahora no la cambio por nada."</p>
+                    <p class="autor">- Juan P., 45 años</p>
+                </div>
+                
+                <div class="testimonio">
+                    <p>"Compré una para mi madre de 75 años y en una semana ya notamos la diferencia. Ahora toda la familia quiere una."</p>
+                    <p class="autor">- Laura M., 52 años</p>
+                </div>
+            </div>
+            
+            <div class="formulario-comentarios">
+                <h3>Cuéntanos tu experiencia</h3>
+                <form id="comentario-form" action="https://formspree.io/f/mwpodvkv" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comentario">Tu comentario</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar comentario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="tiendas" id="tiendas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dónde comprar</h2>
+                <p>Encuentra nuestras almohadas en estas tiendas de Querétaro</p>
+            </div>
+            
+            <div class="map-filters">
+                <button class="filter-btn active" data-filter="all">Todas las tiendas</button>
+                <button class="filter-btn" data-filter="farmacia">Farmacias Guadalajara</button>
+                <button class="filter-btn" data-filter="doctor-simi">Doctor Simi</button>
+                <button class="filter-btn" data-filter="ortopedia">Tiendas Ortopédicas</button>
+                <button class="filter-btn" data-filter="distribuidor">Distribuidores</button>
+            </div>
+
+            <div id="mapa-tiendas"></div>
+            
+            <div class="tiendas-list">
+                <div class="tienda-item">
+                    <div class="tienda-icon">
+                        <i class="fas fa-clinic-medical"></i>
+                    </div>
+                    <div class="tienda-info">
+                        <h4>Farmacias Guadalajara</h4>
+                        <p>Varias ubicaciones en Querétaro</p>
+                    </div>
+                </div>
+                
+                <div class="tienda-item">
+                    <div class="tienda-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="tienda-info">
+                        <h4>Doctor Simi</h4>
+                        <p>Varias ubicaciones en Querétaro</p>
+                    </div>
+                </div>
+                
+                <div class="tienda-item">
+                    <div class="tienda-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="tienda-info">
+                        <h4>Tiendas Ortopédicas</h4>
+                        <p>Varias ubicaciones en Querétaro</p>
+                    </div>
+                </div>
+                
+                <div class="tienda-item">
+                    <div class="tienda-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="tienda-info">
+                        <h4>Distribuidores Autorizados</h4>
+                        <p>Varias ubicaciones en Querétaro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>¿Tienes dudas o quieres más información sobre nuestros productos?</p>
+            </div>
+            
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contacto-text">
+                            <h4>Teléfono</h4>
+                            <a href="tel:+524423356604">442 335 6604</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contacto-text">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/524423356604">Envíanos un mensaje</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contacto-text">
+                            <h4>Email</h4>
+                            <a href="mailto:info@cervisoft.com">info@cervisoft.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="contacto-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contacto-text">
+                            <h4>Horario</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577838250675&mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cervisoftalmohadas?igsh=MXFoMGs3ejUzcG5tYQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contacto-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contacto-form" action="https://formspree.io/f/mwpodvkv" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre</label>
+                            <input type="text" id="contact-name" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-phone">Teléfono</label>
+                            <input type="tel" id="contact-phone" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" name="mensaje" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>CerviSoft</h3>
+                    <p>Fabricantes de almohadas ergonómicas diseñadas para mejorar tu descanso y cuidar de tu salud cervical.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#tiendas">Tiendas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="tel:+524423356604">442 335 6604</a></li>
+                        <li><a href="mailto:info@cervisoft.com">info@cervisoft.com</a></li>
+                        <li>Querétaro, México</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CerviSoft. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product">
+                <div class="modal-img">
+                    <img id="modalProductImg" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3 id="modalProductTitle"></h3>
+                    <span class="modal-price" id="modalProductPrice"></span>
+                    <div class="modal-features">
+                        <h4>Características:</h4>
+                        <ul id="modalProductFeatures">
+                            
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/524423356604?text=✨%20¡Hola!%20Estoy%20interesado%20en%20comprar%20la%20almohada%20CerviSoft%20" class="btn" id="modalWhatsappBtn">Comprar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="imageZoomModal">
+        <span class="close-zoom">&times;</span>
+        <img class="modal-zoom-content" id="zoomedImage">
+        <div id="caption"></div>
+    </div>
+
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
